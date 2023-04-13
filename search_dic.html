@@ -65,14 +65,23 @@ h5,a,input[type="text"]{
 		
 		@media (max-width: 480px) {
 		
-		nav.fixed-top {
-    position: absolute !important;
-    top: 0px;
-    right: 30px !important;
-    left: 0px;
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: -324px !important;
     z-index: 1030;
+	
 }
-
+.search_result
+{
+margin-right: 152px !important;
+}
+button.navbar-toggler{
+     background-color: #8f8f8f !important;
+    position: absolute !important;
+    margin-right: 690px;
+}
 		body {
     padding-top: 5.375rem;
     color: #6c757d;
@@ -85,13 +94,15 @@ div.search{
     margin-right: 185px !important;
     margin-top: 60px !important;
 }
-  	#about{
-		padding-right: 1rem !important;
-		padding-bottom:0 !important;
-		padding-top:0 !important;
-		padding-left:0 !important;
-		margin-top:60px !important;
-		}
+  	#about {
+    padding-right: 0rem !important;
+    padding-bottom: 0 !important;
+    padding-top: 8 !important;
+    display: inline-flex;
+    padding-left: 0 !important;
+    text-align: justify;
+    margin-right: 43px;
+}
 }
 
 #sideNav{
@@ -135,6 +146,50 @@ h5{
     border-radius: 34px !important;
     padding-top: 9px !important;
 	color:#000;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 991px){
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: -324px !important;
+    z-index: 1030;
+}
+.search_result
+{
+margin-right: 152px !important;
+}
+button.navbar-toggler{
+     background-color: #8f8f8f !important;
+    position: absolute !important;
+    margin-right: 690px;
+}
+
+#about {
+    padding-right: 0rem !important;
+    padding-bottom: 0 !important;
+    padding-top: 8 !important;
+    display: inline-flex;
+    padding-left: 0 !important;
+    text-align: justify;
+    margin-right: 43px;
+}
+
+		body {
+    padding-top: 5.375rem;
+    color: #6c757d;
+    position: relative !important;
+    left: 0 !important;
+}
+
 }
 		</style>
     </head>
