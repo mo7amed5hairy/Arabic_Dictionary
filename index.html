@@ -70,12 +70,37 @@ background-color:#e7e8e94a !important;
     position: relative !important;
     left: 0 !important;
 }
-
-div.search{
-
-    margin-right: 185px !important;
-    margin-top: 60px !important;
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: -324px !important;
+    z-index: 1030;
 }
+.navbar-toggler{
+    background-color: #8f8f8f !important;
+
+}
+div.input-group{
+
+    
+ margin-top: 60px !important;
+    width: 100% !important;
+    margin-right: 212px !important;
+    display: flex;
+    align-content: unset;
+    align-items: normal;
+    position: unset;
+    padding-right: 0px;
+}
+
+section.resume-section .resume-section-content {
+    width: 100%;
+    padding-left: 71px;
+    padding-right: 65px;
+    display: inline-grid !important;
+}
+
   	#about{
 		padding-right: 1rem !important;
 		padding-bottom:0 !important;
@@ -83,6 +108,21 @@ div.search{
 		padding-left:0 !important;
 		margin-top:60px !important;
 		}
+
+
+
+.text-primary{
+color: #358989 !important;
+
+}
+h2{
+    font-size: 25px;
+    color: #d61d31;
+    text-align: end !important;
+    white-space: nowrap !important;
+    margin-right: 50px !important;
+	    margin-top: 80px !important;
+}
 }
 
 #sideNav{
@@ -90,10 +130,6 @@ background-color: #f8f8f8 !important;
 box-shadow: 5px 0px 11px 8px rgb(195 195 195 / 90%);
 -webkit-box-shadow: 5px 0px 11px 8px rgb(195 195 195 / 90%);
 -moz-box-shadow: 5px 0px 11px 8px rgb(195 195 195 / 90%);
-}
-.text-primary{
-color: #358989 !important;
-
 }
 .navbar-nav {
   flex-direction: column;
@@ -110,12 +146,80 @@ color: #358989 !important;
     margin-top: auto;
   margin-top: 50px !important;
 }
+
+@media(max-width: 991px){
+
+		body {
+    padding-top: 5.375rem;
+    color: #6c757d;
+    position: relative !important;
+    left: 0 !important;
+}
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: -324px !important;
+    z-index: 1030;
+}
+.navbar-toggler{
+    background-color: #8f8f8f !important;
+
+}
+div.input-group{
+
+    
+ margin-top: 60px !important;
+    width: 100% !important;
+    margin-right: 212px !important;
+    display: flex;
+    align-content: unset;
+    align-items: normal;
+    position: unset;
+    padding-right: 0px;
+}
+
+section.resume-section .resume-section-content {
+    width: 100%;
+    padding-left: 71px;
+    padding-right: 65px;
+    display: inline-grid !important;
+}
+
+  	#about{
+		padding-right: 1rem !important;
+		padding-bottom:0 !important;
+		padding-top:0 !important;
+		padding-left:0 !important;
+		margin-top:60px !important;
+		}
+
+
+
+.text-primary{
+color: #358989 !important;
+
+}
+h2{
+    font-size: 25px;
+    color: #d61d31;
+    text-align: end !important;
+    white-space: nowrap !important;
+    margin-right: 50px !important;
+	    margin-top: 80px !important;
+}
+
+
+}
 		  @media (min-width: 992px)
+		  {
 #sideNav .navbar-brand {
   display: flex;
   margin: auto auto 0;
     margin-top: auto;
   margin-top: 50px !important;
+}
+
 }
 		</style>
     </head>
@@ -171,7 +275,7 @@ background-color: #f1f3f54a;
     border: 1px solid #ccc;
 "
 	  type="button">
-        <i class="fa fa-search"></i>
+        <i class="fa fa-user"></i>
       </button>
     </div>
 	
@@ -199,7 +303,7 @@ background-color: #f1f3f54a;
 
 
             <!-- About-->
-            <section class="resume-section" id="about" style="margin-top:-110px !important;" >
+            <section class="resume-section" id="about" style="margin-top:0px !important;" >
 			
 
                 <div class="resume-section-content p-5">
